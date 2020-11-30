@@ -1,4 +1,4 @@
-import FirebaseAuth from '../components/FirebaseAuth'
+import FirebaseAuth from '../src/components/FirebaseAuth'
 
 const Auth = () => {
   return (
