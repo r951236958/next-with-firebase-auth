@@ -1,0 +1,81 @@
+:root {
+  color-scheme: light dark; /* both supported */
+}
+
+
+/* Apply the filter directly on the body tag */
+body.dark-theme img {
+  filter: brightness(.8) contrast(1.2);
+}
+
+/* Or apply it via media query */
+@media (prefers-color-scheme: dark) {
+  img {
+    filter: brightness(.8) contrast(1.2);
+  }
+}
+
+/* SVG icon */
+body.dark-theme svg.icon path {
+  fill: #efefef;
+}
+/* Font icon (using Font Awesome as an example) */
+body.dark-theme .fa {
+  color: #efefef;
+}
+
+button, a[role="button"] {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250mscubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #303030; 
+  padding: 6px 16px;
+  
+}
+
+.btn-primary-outlined {
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  padding: 5px 15px;
+}
+
+.btn-secondary-outlined {
+  color: #ffea00;
+  border: 1px solid rgba(255, 234, 0, 0.5);
+  padding: 5px 15px;
+}
+
+.btn-secondary-outlined:hover {
+  border: 1px solid #ffea00;
+    background-color: rgba(255, 234, 0, 0.08);
+}
+
+.btn-primary-outlined:hover {
+  text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.btn-primary:hover {
+  background-color: rgb(33, 33, 33);
+}
+
+.btn-secondary {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffea00;
+  padding: 6px 16px;
+}
+
+.btn-secondary:hover {
+  background-color: rgb(178, 163, 0);
+}
